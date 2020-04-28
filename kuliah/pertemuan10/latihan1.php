@@ -56,6 +56,7 @@ $mahasiswa = $rows;
           <a href="">ubah</a> | <a href="">hapus</a>
         </td>
       </tr>
+      <?php $i++ ?>
     <?php endforeach; ?>
   </table>
 </body>
