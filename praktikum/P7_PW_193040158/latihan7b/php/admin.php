@@ -21,14 +21,32 @@ if (isset($_GET['cari'])) {
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
-  <link rel="stylesheet" href="../style.css">
+  <style>
+    .add {
+      margin-bottom: 10px;
+    }
+
+    .add a {
+      color: #212121;
+      text-decoration: none;
+      font-size: 25px;
+      font-family: arial;
+    }
+
+    .add a:hover {
+      color: red;
+    }
+  </style>
 </head>
 
 <body>
+  <div class="logout">
+    <a href="logout.php">
+      <button>Logout</button>
+    </a>
+  </div>
   <div class="add">
-    <button>
-      <a href="tambah.php">Tambah Data</a>
-    </button>
+    <a href="tambah.php">Tambah Data</a>
   </div>
   <form action="" method="get">
     <input type="text" name="keyword" size="30px" placeholder="Masukkan keyword pencarian ..." autocomplete="off" autofocus>

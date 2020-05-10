@@ -21,7 +21,7 @@ if (isset($_GET['cari'])) {
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -45,7 +45,7 @@ if (isset($_GET['cari'])) {
             <?php endif; ?>
     </div>
 
-    <a href="php/admin.php">
+    <a href="php/login.php">
         <button type="">
             Masuk ke halaman admin
         </button>
