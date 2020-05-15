@@ -54,7 +54,7 @@ function upload()
   }
 
   // cek tipe file
-  if ($tipe_file != 'image/jpeg' & $tipe_file != 'image/png') {
+  if ($tipe_file != 'image/jpeg' && $tipe_file != 'image/png') {
     echo "<script>
           alert('yang anda pilih bukan gambar!');
           </script>";
