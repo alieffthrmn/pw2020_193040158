@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'Viga-Regular';
+  src: url('../assets/fonts/Viga-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* NAVBAR */
+.navbar-brand {
+	font-family: Viga-Regular;
+	font-size: 32px;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  margin-right: 20px;
+  font-weight: 500;
+}
+
+#login {
+  margin-top: 120px;
+}
+
+.card-login {
+  padding: 30px;
+  border: 0;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, .1);
+}
+
+#footer {
+  margin-top: 100px;
+}
+
+h4 {
+  font-size: 29px;
+  font-family: Viga-Regular, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
