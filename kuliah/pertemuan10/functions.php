@@ -2,13 +2,14 @@
 
 function koneksi()
 {
-  return mysqli_connect('localhost', 'pw19158', '#Akun#193040158#', 'pw19158_pw_193040158');
+  return mysqli_connect('localhost', 'root', '', 'pw_193040158');
 }
 
 
 function query($query)
 {
   $conn = koneksi();
+
   $result = mysqli_query($conn, $query);
 
   // jika hasilnya hanya 1 data
@@ -17,11 +18,13 @@ function query($query)
   }
 
   $rows = [];
-  while ($row = mysqli_fetch_assoc($result)) {
+  while ($row = mysqli_fetch_array($result)) {
     $rows[] = $row;
   }
+
   return $rows;
 }
+
 
 function tambah($data)
 {
@@ -33,11 +36,13 @@ function tambah($data)
   $jurusan = htmlspecialchars($data['jurusan']);
   $gambar = htmlspecialchars($data['gambar']);
 
+
   $query = "INSERT INTO
               mahasiswa
             VALUES
             (null, '$nama', '$nrp', '$email', '$jurusan', '$gambar');
-          ";
+  
+  ";
   mysqli_query($conn, $query);
   echo mysqli_error($conn);
   return mysqli_affected_rows($conn);
