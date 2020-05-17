@@ -31,7 +31,7 @@
   <div class="container mr-auto">
     <div class="card bg-light pb-4 col-lg-5 box">
       <div class="card-header text-center">
-        <h4 class="card-title">P5_SENIN08_193040158</h4>
+        <h4 class="card-title">P6_SENIN08_193040158</h4>
       </div>
       <ul class="list-group">
         <li class="list-group-item"><a href="latihan6a/index.php" class="btn btn-warning btn-block">Latihan 6a</a></li>
