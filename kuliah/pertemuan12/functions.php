@@ -127,21 +127,21 @@ function registrasi($data)
   $password1 = mysqli_real_escape_string($conn, $data['password1']);
   $password2 = mysqli_real_escape_string($conn, $data['password2']);
 
-  // jika username / pw kosong
+  // jika username / password kosong
   if (empty($username) || empty($password1) || empty($password2)) {
     echo "<script>
-          alert('username / password tidak boleh kosong!');
-          document.location.href = 'registrasi.php';
-          </script>";
+            alert('username / password tidak boleh kosong!');
+            document.location.href = 'registrasi.php';
+            </script>";
     return false;
   }
 
   // jika username sudah ada
   if (query("SELECT * FROM user WHERE username = '$username'")) {
     echo "<script>
-    alert('username sudah terdaftar');
-    document.location.href = 'registrasi.php';
-    </script>";
+            alert('username sudah terdaftar!');
+            document.location.href = 'registrasi.php';
+            </script>";
     return false;
   }
 
@@ -157,19 +157,20 @@ function registrasi($data)
   // jika password < 5 digit
   if (strlen($password1) < 5) {
     echo "<script>
-        alert('password terlalu pendek!');
-        document.location.href = 'registrasi.php';
-        </script>";
+          alert('password terlalu pendek!');
+          document.location.href = 'registrasi.php';
+          </script>";
     return false;
   }
 
   // jika username & password sudah sesuai
-  // enkripsi password
+  // Enkripsi password
   $password_baru = password_hash($password1, PASSWORD_DEFAULT);
-  // insert ke tabel user
+  // insert ke table user
   $query = "INSERT INTO user
             VALUES
-            (null, '$username', '$password_baru')";
+            (null, '$username', '$password_baru')
+            ";
   mysqli_query($conn, $query) or die(mysqli_error($conn));
   return mysqli_affected_rows($conn);
 }
