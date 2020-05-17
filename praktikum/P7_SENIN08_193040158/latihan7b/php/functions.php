@@ -2,8 +2,8 @@
 // function untuk melakukan koneksi ke database
 function koneksi()
 {
-	$conn = mysqli_connect("localhost", "root", "") or die("Koneksi ke DB Gagal");
-	mysqli_select_db($conn, "tubes_193040158") or die("Database salah!");
+	$conn = mysqli_connect("localhost", "pw19158", "#Akun#193040158#") or die("Koneksi ke DB Gagal");
+	mysqli_select_db($conn, "pw19158_tubes_193040158") or die("Database salah!");
 
 	return $conn;
 }
@@ -36,7 +36,7 @@ function tambah($data)
 	$query = "INSERT INTO
               buku
             VALUES
-            ('', '$display', '$judul', '$pengarang', '$penerbit', '$harga');
+            (null, '$display', '$judul', '$pengarang', '$penerbit', '$harga');
   
   ";
 	mysqli_query($conn, $query);
@@ -99,7 +99,7 @@ function registrasi($data)
 	$password = password_hash($password, PASSWORD_DEFAULT);
 
 	// tambah user baru
-	$query_tambah = "INSERT INTO user VALUES('','$username','$password')";
+	$query_tambah = "INSERT INTO user VALUES(null,'$username','$password')";
 	mysqli_query($conn, $query_tambah);
 
 	return mysqli_affected_rows($conn);
