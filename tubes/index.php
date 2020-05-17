@@ -125,7 +125,7 @@ if (isset($_POST['cari']))
                 <div class="container-produk">
                     <div class="row pt-4">
                         <?php foreach ($buku as $bk) : ?>
-                            <div class="col-md-3 pt-2">
+                            <div class="col-6 col-md-3 pt-2">
                                 <div class="card">
                                     <a href="php/detail.php?id=<?= $bk['id'] ?>"><img class="card-img-top ml-5" src="assets/img/<?= $bk["display"]; ?>" alt="Card image cap"></a>
                                     <div class="card-body">
@@ -169,25 +169,25 @@ if (isset($_POST['cari']))
             <div class="container">
                 <hr>
                 <div class="row pt-5">
-                    <div class="col-md-3">
+                    <div class="col-6 col-md-3">
                         <h5 class="pb-3">SHOPPING</h5>
                         <p>Shop</p>
                         <p>Payment</p>
                         <p>Delivery</p>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-6 col-md-3">
                         <h5 class="pb-3">ABOUT ME</h5>
                         <p>About Me</p>
                         <p>Our store</p>
                         <p>Cooperation</p>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-6 col-md-3">
                         <h5 class="pb-3">DELIVERY</h5>
                         <p>Pick up in store</p>
                         <p>Grab send</p>
                         <p>Go-ojek send</p>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-6 col-md-3">
                         <h5 class="pb-3">PAYMENT</h5>
                         <p>Mandiri</p>
                         <p>BRI</p>

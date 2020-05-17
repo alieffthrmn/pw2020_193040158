@@ -21,7 +21,7 @@
 .carousel-caption {
   text-align: left;
   color: black;
-  margin-bottom: 240px;
+  margin-bottom: 50px;
 }
 
 /* Container produk */
@@ -34,8 +34,8 @@
   padding-top: 10px;
 }
 .card img{
-  width: 152px;
-  height: 228px;
+  width: 115px;
+  height: 208px;
 }
 
 .card img:hover {
@@ -63,4 +63,18 @@
   right: 25px;
   display: none;
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, .3);
+}
+
+/* DEKSTOP VERSION */
+@media (min-width: 992px) {
+    
+.carousel-caption {
+  text-align: left;
+  color: black;
+  margin-bottom: 240px;
+}
+  .card img{
+    width: 152px;
+    height: 228px;
+  }
 }

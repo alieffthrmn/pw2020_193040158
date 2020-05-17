@@ -9,7 +9,7 @@ $buku = cari($_GET['keyword']);
 <?php else : ?>
   <div class="row pt-4">
     <?php foreach ($buku as $bk) : ?>
-      <div class="col-md-3 pt-2">
+      <div class="col-6 col-md-3 pt-2">
         <div class="card">
           <a href="php/detail.php?id=<?= $bk['id'] ?>"><img class="card-img-top ml-5" src="assets/img/<?= $bk["display"]; ?>" alt="Card image cap"></a>
           <div class="card-body">
