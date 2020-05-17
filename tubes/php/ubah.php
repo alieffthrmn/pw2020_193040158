@@ -78,19 +78,19 @@ if (isset($_POST['ubah'])) {
                 <div class="form-group row">
                   <label for="pengarang" class="col-md-4 col-form-label">Author</label>
                   <div class="col-md-6">
-                    <input type="text" class="form-control" name="pengarang" required value="<?= $bk['pengarang']; ?>">
+                    <input type="text" class="form-control" name="pengarang" autocomplete="off" required value="<?= $bk['pengarang']; ?>">
                   </div>
                 </div>
                 <div class="form-group row">
                   <label for="penerbit" class="col-md-4 col-form-label">Publisher</label>
                   <div class="col-md-6">
-                    <input type="text" class="form-control" name="penerbit" required value="<?= $bk['penerbit']; ?>">
+                    <input type="text" class="form-control" name="penerbit" autocomplete="off" required value="<?= $bk['penerbit']; ?>">
                   </div>
                 </div>
                 <div class="form-group row">
                   <label for="harga" class="col-md-4 col-form-label">Price</label>
                   <div class="col-md-6">
-                    <input type="text" class="form-control" name="harga" required value="<?= $bk['harga']; ?>">
+                    <input type="text" class="form-control" name="harga" autocomplete="off" required value="<?= $bk['harga']; ?>">
                   </div>
                 </div>
                 <div class="form-group row">

@@ -93,19 +93,19 @@ if (isset($_POST['tambah'])) {
           <div class="form-group row">
             <label for="pengarang" class="col-md-4 col-form-label">Author</label>
             <div class="col-md-6">
-              <input type="text" class="form-control" name="pengarang" required>
+              <input type="text" class="form-control" name="pengarang" autocomplete="off" required>
             </div>
           </div>
           <div class="form-group row">
             <label for="penerbit" class="col-md-4 col-form-label">Publisher</label>
             <div class="col-md-6">
-              <input type="text" class="form-control" name="penerbit" required>
+              <input type="text" class="form-control" name="penerbit" autocomplete="off" required>
             </div>
           </div>
           <div class="form-group row">
             <label for="harga" class="col-md-4 col-form-label">Price</label>
             <div class="col-md-6">
-              <input type="text" class="form-control" name="harga" required>
+              <input type="text" class="form-control" name="harga" autocomplete="off" required>
             </div>
           </div>
           <div class="form-group row">
