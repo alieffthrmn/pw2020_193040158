@@ -2,9 +2,8 @@
 
 function koneksi()
 {
-  return mysqli_connect('localhost', 'pw19158', '#Akun#193040158#', 'pw19158_pw_193040158');
+  return mysqli_connect('localhost', 'root', '', 'pw_193040149');
 }
-
 
 function query($query)
 {
@@ -71,8 +70,7 @@ function ubah($data)
   return mysqli_affected_rows($conn);
 }
 
-function cari($keyword)
-{
+function cari($keyword) {
   $conn = koneksi();
 
   $query = "SELECT * FROM mahasiswa
