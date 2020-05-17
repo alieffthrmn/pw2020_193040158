@@ -20,7 +20,10 @@ $buku = query("SELECT * FROM buku WHERE id = $id")[0];
 
 <head>
 	<meta charset="UTF-8">
-	<title>Detail Product</title> <!-- MY CSS -->
+	<title>Detail Product</title>
+	<link rel="icon" type="image/png" href="../assets/img/aset/icon.png">
+
+	<!-- MY CSS -->
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" href="../css/detail.css">
 
@@ -74,14 +77,14 @@ $buku = query("SELECT * FROM buku WHERE id = $id")[0];
 						<p><?= $buku["pengarang"] ?></p>
 						<div class="display">
 							<img class="img-fluid imb-thumbnail" src="../assets/img/<?= $buku['display'] ?>" alt="">
-							<div class="float-right">
-								<h5><b>Publisher : </b><?= $buku["penerbit"] ?></h5>
-							</div>
 						</div>
-						<p class="pt-4">Bagikan :
-							<a href="#" style="color: #212121; font-size: 20px;"><i class="fab fa-facebook-square ml-1"></i></a>
-							<a href="#" style="color: #212121; font-size: 20px;"><i class="fab fa-instagram-square ml-1"></i></a>
-							<a href="#" style="color: #212121; font-size: 20px;"><i class="fab fa-whatsapp-square ml-1"></i></a>
+						<div class="mt-5">
+							<h5><b>Publisher : </b><?= $buku["penerbit"] ?></h5>
+						</div>
+						<p class="pt-2">Bagikan :
+							<a href="#" style="color: #212121; font-size: 25px;"><i class="fab fa-facebook-square ml-1"></i></a>
+							<a href="#" style="color: #212121; font-size: 25px;"><i class="fab fa-instagram-square ml-1"></i></a>
+							<a href="#" style="color: #212121; font-size: 25px;"><i class="fab fa-whatsapp-square ml-1"></i></a>
 						</p>
 					</div>
 				</div>
@@ -149,6 +152,7 @@ $buku = query("SELECT * FROM buku WHERE id = $id")[0];
 		</div>
 	</footer>
 	<!-- footer;bottom -->
+
 </body>
 
 </html>

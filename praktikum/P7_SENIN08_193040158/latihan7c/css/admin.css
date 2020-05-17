@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Viga-Regular';
+  src: url('../assets/fonts/Viga-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* NAVBAR */
+.navbar-brand {
+	font-family: Viga-Regular;
+	font-size: 32px;
+}

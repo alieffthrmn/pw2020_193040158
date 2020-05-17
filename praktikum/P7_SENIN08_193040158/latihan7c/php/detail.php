@@ -81,16 +81,16 @@ $buku = query("SELECT * FROM buku WHERE id = $id")[0];
 					</div>
 				</div>
 				<div class="col-lg-4">
-					<div class="card  border-primary card-details card-right">
+					<div class="card  border-warning card-details card-right">
 						<h3>Soft cover</h3>
 						<p>Price :</p>
 						<p style="color: red">Rp. <?= $buku["harga"]; ?>,-</p>
 					</div>
 					<div class="buy pt-2 text-center">
-						<a href="login.php" class="btn btn-primary">Login to buy</a>
+						<a href="login.php" class="btn btn-warning">Login to buy</a>
 					</div>
 					<div class="buy pt-2 text-center">
-						<a href="" class="btn btn-primary">Add to wishlist</a>
+						<a href="" class="btn btn-warning">Add to wishlist</a>
 					</div>
 				</div>
 			</div>

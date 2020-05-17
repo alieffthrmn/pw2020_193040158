@@ -21,6 +21,7 @@ if (isset($_POST['cari']))
 <head>
   <meta charset="UTF-8">
   <title>Bookthrmn Admin Panel</title>
+  <link rel="icon" type="image/png" href="../assets/img/aset/icon.png">
 
   <!-- MY CSS -->
   <link rel="stylesheet" href="../css/bootstrap.min.css">

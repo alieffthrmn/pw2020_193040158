@@ -24,6 +24,7 @@ if (isset($_POST['register'])) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bookthrmn Digital Register</title>
+  <link rel="icon" type="image/png" href="../assets/img/aset/icon.png">
 
   <!-- MY CSS -->
   <link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -88,6 +89,7 @@ if (isset($_POST['register'])) {
                   </div>
                 </div>
                 <button type="submit" class="btn btn-warning" name="register">Register</button>
+                <p class="mt-3 font-weight-normal">Already have an account? <a href="login.php" class="font-weight-bold">Login Now</a></p>
               </form>
             </div>
           </div>

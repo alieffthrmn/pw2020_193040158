@@ -28,25 +28,28 @@ if (isset($_GET['cari'])) {
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
-  <style>
-    .add {
-      margin-bottom: 10px;
-    }
 
-    .add a {
-      color: #212121;
-      text-decoration: none;
-      font-size: 25px;
-      font-family: arial;
-    }
+  <!-- MY CSS -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/admin.css">
 
-    .add a:hover {
-      color: red;
-    }
-  </style>
+
+  <!-- SCRIPT -->
+  <script src="../js/jquery-3.3.1.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
 </head>
 
 <body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <p class="navbar-brand" href="../index.php">
+        Bookthrmn Admin Panel
+      </p>
+    </div>
+  </nav>
+  <!-- NAVBAR:END -->
+
   <div class="logout">
     <a href="logout.php">
       <button>Logout</button>
