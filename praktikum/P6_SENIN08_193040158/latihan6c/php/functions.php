@@ -2,8 +2,8 @@
 // function untuk melakukan koneksi ke database
 function koneksi()
 {
-	$conn = mysqli_connect("localhost", "pw19158", "#Akun#193040158#") or die("Koneksi ke DB Gagal");
-	mysqli_select_db($conn, "pw19158_tubes_193040158") or die("Database salah!");
+	$conn = mysqli_connect("localhost", "root", "") or die("Koneksi ke DB Gagal");
+	mysqli_select_db($conn, "tubes_193040158") or die("Database salah!");
 
 	return $conn;
 }
@@ -36,7 +36,7 @@ function tambah($data)
 	$query = "INSERT INTO
               buku
             VALUES
-            (null, '$display', '$judul', '$pengarang', '$penerbit', '$harga');
+            ('', '$display', '$judul', '$pengarang', '$penerbit', '$harga');
   
   ";
 	mysqli_query($conn, $query);
@@ -44,11 +44,11 @@ function tambah($data)
 	return mysqli_affected_rows($conn);
 }
 
-function hapus($id)
-{
-	$conn = koneksi();
+	function hapus($id)
+	{
+		$conn = koneksi();
+		
+		mysqli_query($conn, "DELETE FROM buku WHERE id = $id");
 
-	mysqli_query($conn, "DELETE FROM buku WHERE id = $id");
-
-	return mysqli_affected_rows($conn);
-}
+		return mysqli_affected_rows($conn);
+	}
