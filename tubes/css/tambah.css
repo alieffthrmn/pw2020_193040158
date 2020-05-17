@@ -7,7 +7,7 @@
 
 /* NAVBAR */
 .navbar {
-  box-shadow: 0 0 5px 5px rgba(0, 0, 0, .3);
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
 }
 .navbar-brand {
 	font-family: Viga-Regular;

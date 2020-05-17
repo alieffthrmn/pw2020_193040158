@@ -91,7 +91,7 @@ if (isset($_POST['submit'])) {
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto">
           <a class="nav-item nav-link active" href="../index.php">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="../index.php">Product</a>
+          <a class="nav-item nav-link" href="all_product.php">Product</a>
           <a class="nav-item nav-link btn btn-warning" href="login.php">Login <i class="fas fa-sign-in-alt"></i></a>
         </div>
       </div>
