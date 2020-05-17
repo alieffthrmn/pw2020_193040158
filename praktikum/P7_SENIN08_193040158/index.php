@@ -23,7 +23,7 @@
       width: 120px;
     }
   </style>
-  <title>Index Modul 5</title>
+  <title>Index Modul 7</title>
 </head>
 
 <body class="bg-dark">
