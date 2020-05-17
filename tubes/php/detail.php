@@ -96,6 +96,7 @@ $buku = query("SELECT * FROM buku WHERE id = $id")[0];
 					</div>
 					<div class="buy pt-3 text-center">
 						<a href="#" class="btn btn-warning font-weight-bold">Buy</a>
+						<a href="../index.php" class="btn btn-warning font-weight-bold mt-4">Back</a>
 					</div>
 				</div>
 			</div>
