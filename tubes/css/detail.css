@@ -52,8 +52,19 @@
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 
+.col-lg-4 {
+  margin-top: 25px;   
+}
 
 /* FOOTER */
 #footer {
   margin-top: 100px;
+}
+
+/* DEKSTOP VERSION */
+@media (min-width: 992px) {
+  .col-lg-4 {
+    margin-top: 0;
+  }
+
 }

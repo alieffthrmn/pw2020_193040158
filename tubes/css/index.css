@@ -36,6 +36,7 @@
 .card img{
   width: 115px;
   height: 208px;
+  margin-left: 50px !important;
 }
 
 .card img:hover {
@@ -73,8 +74,9 @@
   color: black;
   margin-bottom: 240px;
 }
-  .card img{
-    width: 152px;
-    height: 228px;
-  }
+.card img{
+  width: 152px;
+  height: 228px;
+  margin-left: 50px !important;
+}
 }
