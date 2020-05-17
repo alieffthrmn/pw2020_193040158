@@ -31,9 +31,21 @@
   margin-top: 100px;
 }
 
+img {
+  width: 0;
+}
+
 h4 {
   font-size: 29px;
   font-family: Viga-Regular, sans-serif;
   text-transform: uppercase;
   margin-bottom: 20px;
+}
+
+/* DEKSTOP VERSION */
+@media (min-width: 992px) {
+   img {
+     width: 346px;
+     height: 380px;
+   }
 }

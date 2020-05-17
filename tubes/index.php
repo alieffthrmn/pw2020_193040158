@@ -43,7 +43,7 @@ if (isset($_POST['cari']))
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ml-auto">
                     <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="#produk">Product</a>
+                    <a class="nav-item nav-link" href="php/all_product.php">Product</a>
                     <a class="nav-item nav-link btn btn-warning" href="php/login.php">Login <i class="fas fa-sign-in-alt"></i></a>
                 </div>
             </div>
@@ -109,37 +109,49 @@ if (isset($_POST['cari']))
         <div class="container">
             <div class="row mb-4 pt-4">
                 <div class="col text-center">
-                    <h3>Product</h3>
+                    <h3>Recommended Product</h3>
                 </div>
             </div>
-            <form class="form-inline justify-content-center" method="POST">
-                <input class="form-control mr-sm-2 keyword" name="keyword" size="50px" autocomplete="off" type="search" placeholder="Search product" aria-label="Search">
-                <button class="btn btn-warning  my-2 my-sm-0 tombol-cari" type="submit" name="cari">Search</button>
-            </form>
             <hr>
-            <?php if (empty($buku)) : ?>
-                <div class="alert alert-danger text-center font-weight-bold" role="alert">
-                    Product not found !
-                </div>
-            <?php else : ?>
-                <div class="container-produk">
-                    <div class="row pt-4">
-                        <?php foreach ($buku as $bk) : ?>
-                            <div class="col-6 col-md-3 pt-2">
-                                <div class="card">
-                                    <a href="php/detail.php?id=<?= $bk['id'] ?>"><img class="card-img-top ml-3" src="assets/img/<?= $bk["display"]; ?>" alt="Card image cap"></a>
-                                    <div class="card-body">
-                                        <p class="card-text text-center">
-                                            <h5 style="font-size: 12px; text-align:center;"><?= $bk["judul"]; ?></h5>
-                                        </p>
-                                        <p class="card-text text-center"><a href="php/detail.php?id=<?= $bk['id'] ?>" class="btn btn-warning btn-sm">View details</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        <?php endforeach; ?>
+            <div class="row pt-4">
+                <div class="col-6 col-md-3 pt-2">
+                    <div class="card">
+                        <a href="php/detail.php?id=1"><img class="card-img-top ml-3" src="assets/img/1.jpg"></a>
+                        <div class="card-body">
+                            <h5 style="font-size: 12px; text-align:center;">Gagal Menjadi Manusia</h5>
+                            <p class="card-text text-center"><a href="php/detail.php?id=1" class="btn btn-warning btn-sm">View details</a></p>
+                        </div>
                     </div>
                 </div>
-            <?php endif; ?>
+                <div class="col-6 col-md-3 pt-2">
+                    <div class="card">
+                        <a href="php/detail.php?id=2"><img class="card-img-top ml-3" src="assets/img/2.jpg"></a>
+                        <div class="card-body">
+                            <h5 style="font-size: 12px; text-align:center;">Kepunahan Keenam</h5>
+                            <p class="card-text text-center"><a href="php/detail.php?id=2" class="btn btn-warning btn-sm">View details</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 pt-2">
+                    <div class="card">
+                        <a href="php/detail.php?id=3"><img class="card-img-top ml-3" src="assets/img/3.jpg"></a>
+                        <div class="card-body">
+                            <h5 style="font-size: 12px; text-align:center;">Pemimpi(N) Edisi Amandemen</h5>
+                            <p class="card-text text-center"><a href="php/detail.php?id=3" class="btn btn-warning btn-sm">View details</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 pt-2">
+                    <div class="card">
+                        <a href="php/detail.php?id=4"><img class="card-img-top ml-3" src="assets/img/4.jpg"></a>
+                        <div class="card-body">
+                            <h5 style="font-size: 12px; text-align:center;">Nanti Kita Cerita Tentang Hari Ini</h5>
+                            <p class="card-text text-center"><a href="php/detail.php?id=4" class="btn btn-warning btn-sm">View details</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center"><a href="php/all_product.php" class="btn btn-warning mt-4">All Product</a></p>
         </div>
     </section>
     <!-- container:produk -->
@@ -200,6 +212,7 @@ if (isset($_POST['cari']))
     </section>
     <!-- footer -->
 
+
     <!-- footer;bottom -->
     <footer class="bg-dark text-white mt-5">
         <div class="container">
@@ -213,9 +226,8 @@ if (isset($_POST['cari']))
     <!-- footer;bottom -->
 
     <!-- button -->
-    <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
+    <a href="#" role="button" id="back-to-top" class="btn btn-light btn-lg back-top"><i class="fas fa-chevron-up"></i></a>
 
-    <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <script>
         var scroll = new SmoothScroll('a[href*="#"]');

@@ -66,6 +66,13 @@
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, .3);
 }
 
+.back-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, .3);
+}
+
 /* DEKSTOP VERSION */
 @media (min-width: 992px) {
     

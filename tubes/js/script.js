@@ -9,7 +9,7 @@ tombolCari.style.display = 'none';
 keyword.addEventListener('keyup', function () {
   // ajax
   // fetch
-  fetch('ajax/ajax_cari.php?keyword=' + keyword.value)
+  fetch('ajax_cari.php?keyword=' + keyword.value)
     .then((response) => response.text())
     .then((response) => (container_produk.innerHTML = response))
 
